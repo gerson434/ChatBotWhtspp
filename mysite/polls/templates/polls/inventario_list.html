@@ -1,0 +1,31 @@
+<h1>Lista Inventario</h1>
+<h2>Disponibles</h2>
+
+<table>
+    <tr>
+        <th>
+        placa
+        </th>
+        <th>
+        Modelo
+        </th>
+        <th>
+        Descripcion
+        </th>
+    </tr>
+    {% for Inventario in object_list %}
+    <td>
+        {{Inventario.placa}}
+        {{Inventario.modelo}}
+    </td>
+    <td>
+
+        {{Inventario.modelo}}
+    </td>
+    <td>
+        {{Inventario.Descripcion}}
+
+    </td>
+    {% endfor %}
+
+</table>
